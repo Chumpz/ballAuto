@@ -51,9 +51,3 @@ class RigcentCurveLibrary(object):
         
         return disc_geo
         
-if __name__ == "__main__":
-    RigcentCurveLibrary.cube()
-    
-    # print(cmds.listRelatives("cube", c=1, s=1))
-    
-    cmds.ls(dag=True, ap=True, sl=True)
