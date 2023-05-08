@@ -150,8 +150,5 @@ if __name__ == "__main__":
         
     cmds.file(newFile=True, force=True)
     
-    # ball = BallAutoRig()
-    # ball.construct_rig()
-    
     ballUi = BallAutoRigUi()
     ballUi.show()
