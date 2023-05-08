@@ -2,7 +2,6 @@ import maya.cmds as cmds
 import maya.mel as mel
 from rigcent_helpers import RigcentHelpers
 from rigcent_curve_library import RigcentCurveLibrary
-from ball_auto_rig_ui import BallAutoRigUi
 
 
 class BallAutoRig(object):
@@ -103,10 +102,9 @@ class BallAutoRig(object):
         cmds.select(clear=True)
         
         
-if __name__ == "__main__":
-        
-    cmds.file(newFile=True, force=True)
+if __name__ == "__main__":     
     
+    from ball_auto_rig_ui import BallAutoRigUi 
     ballUi = BallAutoRigUi()
     ballUi.show()
     
